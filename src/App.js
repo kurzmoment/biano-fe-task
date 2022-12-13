@@ -2,6 +2,7 @@ import "./App.css";
 import Category from "./components/Category";
 import CategoryMenu from "./components/CategoryMenu";
 import Navbar from "./components/Navbar";
+import Products from "./components/Products";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Category />
       <CategoryMenu />
+      <Products />
     </div>
   );
 }
