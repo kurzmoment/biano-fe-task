@@ -73,11 +73,12 @@ function Products() {
   ];
 
   return (
-    <div className="mt-4">
-      <h4 className="text-sm text-slate-300 pl-4">
-        Zobrazeno DYN CISLO produktů podle Doporučené
+    <div className="mt-4 ">
+      <h4 className="text-sm text-slate-300 pl-4 md:hidden">
+        Zobrazeno {data.length} produktů podle{" "}
+        <span className="text-[#F58A8A] underline">Doporučené</span>
       </h4>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-2 md:grid-cols-3 md:h-[564px] md:overflow-y-auto no-scrollbar">
         {data.map((d) => (
           <ProductCard image={d.image} />
         ))}
