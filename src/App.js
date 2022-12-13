@@ -1,16 +1,24 @@
 import "./App.css";
 import Category from "./components/Category";
 import CategoryMenu from "./components/CategoryMenu";
+import Filter from "./components/Filter";
 import Navbar from "./components/Navbar";
 import Products from "./components/Products";
 
 function App() {
   return (
-    <div className="m-auto mt-10 w-[375px]">
-      <Navbar />
-      <Category />
-      <CategoryMenu />
-      <Products />
+    <div className="m-auto md:pt-10 md:flex md:justify-center md:bg-[#616A92]  ">
+      <div className="w-[375px] bg-white md:w-[1375px] md:rounded-3xl">
+        <Navbar />
+        <Category />
+        <div className="md:flex md:gap-10">
+          <Filter />
+          <div>
+            <CategoryMenu />
+            <Products />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

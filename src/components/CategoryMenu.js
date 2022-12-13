@@ -32,10 +32,12 @@ function CategoryMenu() {
   return (
     <div className="mt-4 ml-4">
       <div className="pb-4">
-        <h2 className="font-semibold">Pohovky a gauče</h2>
-        <p className="text-xs text-slate-200">Pro posun použijte šipky</p>
+        <h2 className="font-semibold md:text-[26px]">Pohovky a gauče</h2>
+        <p className="text-md text-slate-200 md:hidden">
+          Pro posun použijte šipky
+        </p>
       </div>
-      <div className="flex overflow-x-auto no-scrollbar gap-8 pl-1">
+      <div className="flex overflow-x-auto md:overflow-x-visible no-scrollbar gap-8 pl-1">
         {data.map((d) => (
           <CategoryMenuCard name={d.name} image={d.image} />
         ))}
