@@ -6,14 +6,15 @@ import Navbar from "./components/Navbar";
 import Products from "./components/Products";
 
 function App() {
+  // TODO: MEDIUM SIZE
   return (
-    <div className="m-auto md:pt-10 md:pb-10 md:flex md:justify-center md:bg-[#616A92]  ">
-      <div className="w-[375px] bg-white md:w-[1273px] md:h-[1000px]  md:rounded-3xl">
+    <div className="m-auto lg:pt-10 lg:pb-10 lg:flex lg:justify-center lg:bg-[#616A92]  ">
+      <div className="w-[375px] bg-white lg:w-[1273px] lg:h-[1000px]  lg:rounded-3xl">
         <Navbar />
         <Category />
-        <div className="md:flex md:gap-10">
+        <div className="lg:flex lg:gap-10">
           <Filter />
-          <div className="md:w-[874px] ">
+          <div className="lg:w-[874px] ">
             <CategoryMenu />
             <Products />
           </div>

@@ -74,11 +74,11 @@ function Products() {
 
   return (
     <div className="mt-4 ">
-      <h4 className="text-sm text-slate-300 pl-4 md:hidden">
+      <h4 className="text-sm text-slate-300 pl-4 lg:hidden">
         Zobrazeno {data.length} produktů podle{" "}
         <span className="text-[#F58A8A] underline">Doporučené</span>
       </h4>
-      <div className="grid grid-cols-2 md:grid-cols-3 md:h-[564px] md:overflow-y-auto no-scrollbar">
+      <div className="grid grid-cols-2 lg:grid-cols-3 lg:h-[564px] lg:overflow-y-auto no-scrollbar">
         {data.map((d) => (
           <ProductCard image={d.image} />
         ))}

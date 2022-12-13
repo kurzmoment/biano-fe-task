@@ -30,12 +30,12 @@ function CategoryMenu() {
   ];
 
   return (
-    <div className="mt-4 ml-4">
+    <div className="mt-4 ml-4 lg:ml-10">
       <div className="pb-4 ">
-        <h2 className="font-semibold md:text-[26px]">Pohovky a gauče</h2>
-        <p className="text-md text-slate-200 md:hidden">
+        <h2 className="font-semibold lg:text-[26px]">Nábytek</h2>
+        {/* <p className="text-md text-slate-200 lg:hidden">
           Pro posun použijte šipky
-        </p>
+        </p> */}
       </div>
       <div className="flex overflow-x-auto no-scrollbar pb-6 gap-8 pl-1">
         {data.map((d) => (
