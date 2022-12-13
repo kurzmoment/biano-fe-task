@@ -1,5 +1,6 @@
 import "./App.css";
 import Category from "./components/Category";
+import CategoryMenu from "./components/CategoryMenu";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="m-auto mt-10 w-[375px]">
       <Navbar />
       <Category />
+      <CategoryMenu />
     </div>
   );
 }
