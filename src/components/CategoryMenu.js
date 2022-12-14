@@ -33,13 +33,21 @@ function CategoryMenu() {
     <div className="mt-4 ml-4 lg:ml-10">
       <div className="pb-4 ">
         <h2 className="font-semibold lg:text-[26px]">Nábytek</h2>
-        {/* <p className="text-md text-slate-200 lg:hidden">
-          Pro posun použijte šipky
-        </p> */}
+        <a
+          onClick={() => sessionStorage.clear()}
+          href="/"
+          className={
+            sessionStorage.getItem("cat") !== null
+              ? `text-sm text-slate-400 `
+              : `hidden`
+          }
+        >
+          Vymazat filter
+        </a>
       </div>
       <div className="flex overflow-x-auto no-scrollbar pb-6 gap-8 pl-1">
-        {data.map((d) => (
-          <CategoryMenuCard name={d.name} image={d.image} />
+        {data.map((d, i) => (
+          <CategoryMenuCard key={i} name={d.name} image={d.image} />
         ))}
       </div>
     </div>

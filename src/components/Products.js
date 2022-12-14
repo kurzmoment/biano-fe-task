@@ -71,6 +71,8 @@ function Products() {
       recomended: true,
     },
   ];
+  console.log(sessionStorage.getItem("cat"));
+  console.log(data.filter((d) => d.category === "postele"));
 
   return (
     <div className="mt-4 ">
@@ -79,9 +81,15 @@ function Products() {
         <span className="text-[#F58A8A] underline">Doporučené</span>
       </h4>
       <div className="grid grid-cols-2 lg:grid-cols-3 lg:h-[564px] lg:overflow-y-auto no-scrollbar">
-        {data.map((d) => (
-          <ProductCard image={d.image} />
-        ))}
+        {sessionStorage.getItem("cat") === null &&
+          data.map((d, i) => <ProductCard key={i} image={d.image} />)}
+        {sessionStorage.getItem("cat") !== null &&
+          data
+            .filter((d) => d.category === sessionStorage.getItem("cat"))
+            .map((p, i) => <ProductCard key={i} image={p.image} />)}
+        {/* {data.map((d, i) => (
+          <ProductCard key={i} image={d.image} />
+        ))} */}
       </div>
     </div>
   );
