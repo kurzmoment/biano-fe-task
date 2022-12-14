@@ -38,7 +38,7 @@ function CategoryMenu() {
           href="/"
           className={
             sessionStorage.getItem("cat") !== null
-              ? `text-sm text-slate-400 `
+              ? `text-sm text-slate-400 underline`
               : `hidden`
           }
         >

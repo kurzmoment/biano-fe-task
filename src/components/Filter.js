@@ -21,8 +21,9 @@ function Filter() {
   ];
 
   return (
-    <div className="w-[265px] ml-4 lg:ml-10 mt-4 lg:border lg:rounded-lg lg:h-fit lg:p-2">
-      <div className="lg:flex lg:gap-4 lg:relative hidden lg:border-b-2  lg:pb-2 ">
+    <div className="w-auto mr-5 lg:w-[265px] ml-5 lg:ml-10 mt-4 lg:border lg:rounded-lg lg:h-fit lg:p-2">
+      {/* TADY POD TIMTO KOMENTAREM BYLO HIDDEN */}
+      <div className="mb-4 flex gap-4 lg:flex lg:gap-4 lg:relative lg:border-b-2  lg:pb-2 ">
         <div className="flex gap-2 ">
           <img className="w-[24px]" src="/folder.svg" alt="" />
           <p>Kategorie</p>
@@ -30,7 +31,9 @@ function Filter() {
         <img
           onClick={() => setState(false)}
           className={
-            state ? `w-[16px] absolute pt-1 right-0 cursor-pointer` : `hidden`
+            state
+              ? `w-[16px] absolute right-5 lg:pt-1 lg:right-0 cursor-pointer`
+              : `hidden`
           }
           src="/arrow-up.svg"
           alt="up arrow"
@@ -38,7 +41,9 @@ function Filter() {
         <img
           onClick={() => setState(true)}
           className={
-            !state ? `w-[16px] absolute pt-1 right-0 cursor-pointer` : `hidden`
+            !state
+              ? `w-[16px] absolute right-5 lg:pt-1 lg:right-0 cursor-pointer`
+              : `hidden`
           }
           src="/arrow-down.svg"
           alt="up arrow"
@@ -51,17 +56,17 @@ function Filter() {
           <p className="text-slate-600">Všechny produkty</p>
         </div>
         {filterData.map((d, i) => (
-          <div key={i} className="lg:flex lg:justify-between lg:mt-2 hidden">
+          <div key={i} className="flex justify-between mt-2">
             <a
               href="/"
               onClick={() => sessionStorage.setItem("cat", d.filterName)}
             >
-              <p className="lg:text-slate-400 lg:hover:text-slate-700 lg:transition-all ">
+              <p className="text-slate-400 hover:text-slate-700 transition-all ">
                 {d.name}
               </p>
             </a>
 
-            <p className="lg:text-slate-400">{d.count}</p>
+            <p className="text-slate-400">{d.count}</p>
           </div>
         ))}
       </div>
