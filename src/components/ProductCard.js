@@ -6,7 +6,7 @@ function ProductCard(props) {
     <div className="p-2 mt-2">
       <div className="relative lg:hover:scale-105 lg:transition-all">
         <div className="bg-white border-2 border-slate-300 hover:bg-red-200 transition-all rounded-full absolute p-1 m-2 right-0 lg:right-4">
-          <img className="w-[14px]" src="/wishlist.svg" alt="" />
+          <img className="w-[14px]" src="category/wishlist.svg" alt="" />
         </div>
         <div className="lg:flex lg:justify-center">
           <img
@@ -22,7 +22,7 @@ function ProductCard(props) {
       <p className="text-slate-400 text-xs mt-2">Maximálně dvouřádkový název</p>
       <p className="font-bold mt-4">999 Kč</p>
       <div className="flex bg-[#F58A8A] rounded-full mt-2 p-2 lg:ml-4 lg:mr-4 justify-center gap-4 cursor-pointer lg:hover:scale-105 lg:transition-all ">
-        <img className="w-[15px] text-bold" src="/plus.svg" alt="add" />
+        <img className="w-[15px] text-bold" src="category/plus.svg" alt="add" />
         <p className="text-white">Do studia</p>
       </div>
     </div>

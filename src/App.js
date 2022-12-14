@@ -1,9 +1,9 @@
+import { Outlet } from "react-router-dom";
 import "./App.css";
 import Category from "./components/Category";
 import CategoryMenu from "./components/CategoryMenu";
 import Filter from "./components/Filter";
 import Navbar from "./components/Navbar";
-import Products from "./components/Products";
 
 function App() {
   // TODO: MEDIUM SIZE
@@ -16,7 +16,7 @@ function App() {
           <Filter />
           <div className="lg:w-[874px] ">
             <CategoryMenu />
-            <Products />
+            <Outlet />
           </div>
         </div>
       </div>

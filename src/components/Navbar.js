@@ -7,7 +7,7 @@ function Navbar() {
         <div className="">
           <img
             className="w-[24px] h-[24px] lg:w-[42px] lg:h-[42px] justify-start lg:absolute lg:bg-white lg:rounded-full lg:right-0 lg:-m-2 lg:p-2 lg:border lg:shadow-lg"
-            src="/x.svg"
+            src="category/x.svg"
             alt="close"
           />
         </div>
