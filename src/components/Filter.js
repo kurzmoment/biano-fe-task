@@ -6,9 +6,9 @@ function Filter() {
   const [state, setState] = useState(true);
 
   return (
-    <div className="w-auto mr-5 lg:w-[265px] ml-5 lg:ml-10 mt-4 lg:border lg:rounded-lg lg:h-fit lg:p-2">
+    <div className="w-auto mr-5 md:w-[265px] ml-5 xl:ml-10 mt-4 xl:border xl:rounded-lg xl:h-fit xl:p-2">
       {/* TADY POD TIMTO KOMENTAREM BYLO HIDDEN */}
-      <div className="mb-4 flex gap-4 lg:flex lg:gap-4 lg:relative lg:border-b-2  lg:pb-2 ">
+      <div className="mb-4 flex gap-4 xl:flex xl:gap-4 md:relative xl:border-b-2  xl:pb-2 ">
         <div className="flex gap-2 ">
           <img className="w-[24px]" src="category/folder.svg" alt="" />
           <p>Kategorie</p>
@@ -17,7 +17,7 @@ function Filter() {
           onClick={() => setState(false)}
           className={
             state
-              ? `w-[16px] absolute right-5 lg:pt-1 lg:right-0 cursor-pointer`
+              ? `w-[16px] absolute right-5 xl:pt-1 md:right-0 cursor-pointer`
               : `hidden`
           }
           src="category/arrow-up.svg"
@@ -27,7 +27,7 @@ function Filter() {
           onClick={() => setState(true)}
           className={
             !state
-              ? `w-[16px] absolute right-5 lg:pt-1 lg:right-0 cursor-pointer`
+              ? `w-[16px] absolute right-5 xl:pt-1 md:right-0 cursor-pointer`
               : `hidden`
           }
           src="category/arrow-down.svg"
@@ -36,7 +36,7 @@ function Filter() {
       </div>
 
       <div className={!state ? `hidden` : `relative`}>
-        <div className="flex gap-2 border-b-2 border-b-slate-100 pb-4 lg:mt-4">
+        <div className="flex gap-2 border-b-2 border-b-slate-100 pb-4 xl:mt-4">
           <img className="w-[16px]" src="category/arrow-left.svg" alt="back" />
           <p className="text-slate-600">Všechny produkty</p>
         </div>

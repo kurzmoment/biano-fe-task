@@ -4,9 +4,9 @@ import CategoryMenuCard from "./CategoryMenuCard";
 
 function CategoryMenu() {
   return (
-    <div className="mt-4 ml-4 lg:ml-10">
+    <div className="mt-4 ml-4 xl:ml-10 ">
       <div className="pb-4 ">
-        <h2 className="font-semibold lg:text-[26px]">Nábytek</h2>
+        <h2 className="font-semibold text-[26px] ">Nábytek</h2>
       </div>
       <div className="flex overflow-x-auto no-scrollbar pb-6 gap-8 pl-1">
         {data.map((d, i) => (

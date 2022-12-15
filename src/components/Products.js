@@ -8,13 +8,13 @@ function Products() {
   console.log(menuId);
   return (
     <div className="mt-4 ">
-      <h4 className="text-sm text-slate-300 pl-4 lg:hidden">
+      <h4 className="text-sm text-slate-300 pl-4 xl:hidden">
         Zobrazeno {data.length} produktů podle{" "}
         <span className="text-[#F58A8A] underline">
           {menuId.toLocaleUpperCase()}
         </span>
       </h4>
-      <div className="grid grid-cols-2 lg:grid-cols-3 lg:h-[564px] lg:overflow-y-auto no-scrollbar">
+      <div className="grid grid-cols-2 lg:grid-cols-3 xl:h-[564px] xl:overflow-y-auto no-scrollbar">
         {menuId === "undefined" ||
           (menuId === "category" &&
             data.map((p, i) => <ProductCard key={i} image={p.image} />))}

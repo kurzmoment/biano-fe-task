@@ -8,13 +8,13 @@ import Navbar from "./components/Navbar";
 function App() {
   // TODO: MEDIUM SIZE
   return (
-    <div className="m-auto lg:pt-10 lg:pb-10 lg:flex lg:justify-center lg:bg-[#616A92]  ">
-      <div className="w-[375px] bg-white lg:w-[1273px] lg:h-[1000px]  lg:rounded-3xl">
+    <div className="m-auto xl:pt-10 xl:pb-10 xl:flex xl:justify-center xl:bg-[#616A92] md:flex md:justify-center ">
+      <div className="w-[375px] bg-white xl:w-[1273px] xl:h-[1000px] xl:rounded-3xl md:w-full ">
         <Navbar />
         <Category />
-        <div className="lg:flex lg:gap-10">
+        <div className="xl:flex xl:gap-10 md:flex md:gap-10">
           <Filter />
-          <div className="lg:w-[874px] ">
+          <div className="xl:w-[874px] md:w-[600px] lg:w-[770px] ">
             <CategoryMenu />
             <Outlet />
           </div>
